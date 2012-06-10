@@ -5,6 +5,12 @@ import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * Test class of LoyalCustomerDiscount
+ * 
+ * @author rmanch
+ *
+ */
 public class LoyalCustomerDiscountTest {
 
 	private LoyalCustomerDiscount loyalCustomerDiscount;

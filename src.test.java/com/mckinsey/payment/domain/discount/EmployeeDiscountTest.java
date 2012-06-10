@@ -5,6 +5,12 @@ import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * Test class of EmployeeDiscount
+ * 
+ * @author rmanch
+ *
+ */
 public class EmployeeDiscountTest {
 
 	private EmployeeDiscount employeeDiscount;

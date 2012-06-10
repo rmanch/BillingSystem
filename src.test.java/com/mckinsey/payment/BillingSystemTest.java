@@ -16,6 +16,14 @@ import org.junit.Test;
 
 import com.mckinsey.payment.domain.discount.Discount;
 
+/**
+ * The test class of BillingSystem.
+ * 
+ * Assumption: Mocking is not done to simplify the test cases. This is beneficial in actual live
+ * system.
+ *   
+ * @author rmanch
+ */
 public class BillingSystemTest {
 	private static BillingSystem billingSystem;
 	private static User employee;

@@ -16,14 +16,15 @@ public class Main {
 	 * and then calls the getNetPayableAmount method to calculate the net payable
 	 * amount.
 	 * 
-	 * @param args Command line arguments
+	 * @param args Command line arguments - not used.
 	 */
 	public static void main(String args[]) {
 		BillingDiscount billingDiscount = new BillingDiscount();
 		EmployeeDiscount empDiscount = new EmployeeDiscount(billingDiscount);
 		BillingSystem billingSystem = BillingSystem.getBillingSystem(billingDiscount);
 		Employee emp = new Employee(empDiscount);
+		
 		double netAmount = billingSystem.getNetPayableAmount(2000, false, emp);
-		System.out.println("Net Amount:" + netAmount);
+		System.out.println("Net Payable Amount After Discount: " + netAmount);
 	}
 }

@@ -17,14 +17,13 @@ Solution:
 
 Classes Hierarchy*:
 
-					Discount 
-										DiscountDecorator*
-BillingDiscount			EmployeeDiscount 	AffiliateDiscount 	LoyalCustomerDiscount
+				Discount 
+							DiscountDecorator*
+BillingDiscount				EmployeeDiscount 	AffiliateDiscount 	LoyalCustomerDiscount
 
 ---------------------------------------------------------------------------------------
-								User 
-								- Discount discount;
-	RegularCustomer		 LoyalCustomer  			 Employee, 				Affiliate,
+					User(Discount)
+	RegularCustomer		 LoyalCustomer  		 Employee 			Affiliate
 	(BillingDiscount)   (LoyalCustomerDiscount)		(EmployeeDiscount)		(AffiliateDiscount)		 
 	
 =========================================================================================
